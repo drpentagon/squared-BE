@@ -1,0 +1,33 @@
+{
+  "name": "squared-be",
+  "version": "1.0.0",
+  "description": "Squared game Backend support. Wrtitten in node.js with Express and should include functionality like highscores, statistics and level data loading and storing.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drpentagon/squared-BE.git"
+  },
+  "keywords": [
+    "game",
+    "backend",
+    "node",
+    "express",
+    "highscore",
+    "rest",
+    "api"
+  ],
+  "author": "Martin Svärd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drpentagon/squared-BE/issues"
+  },
+  "homepage": "https://github.com/drpentagon/squared-BE#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mongoose": "~4.5.4",
+    "body-parser": "~1.0.1"
+  }
+}
