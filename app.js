@@ -46,7 +46,7 @@ router.route('/level/:level/score/time/')
   });
 
 BestBounces = new ScoreHandler('bounces');
-router.route('/level/:level/score/time/')
+router.route('/level/:level/score/bounces/')
   .get((req, res) => {
     const level = req.params.level;
     BestBounces.get(level, res);
@@ -59,7 +59,7 @@ router.route('/level/:level/score/time/')
   });
 
 BestRedirects = new ScoreHandler('redirects');
-router.route('/level/:level/score/time/')
+router.route('/level/:level/score/redirects/')
   .get((req, res) => {
     const level = req.params.level;
     BestRedirects.get(level, res);

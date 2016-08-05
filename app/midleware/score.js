@@ -71,15 +71,15 @@ class ScoreHandler {
           }
           res.json({ message: 'score added', updated: true });
         });
-      } else if(score.val < val) {
+      } else if((this.type === 'total' && val > score.val) ||
+        (this.type !== 'total' && val < score.val)) {
         this.updateScore(score, val, (err) => {
           if (err) {
             res.send(err);
           }
           res.json({ message: 'new highscore', updated: true });
         });
-      }
-      else {
+      } else {
         res.json({ message: 'nothing updated', updated: false });
       }
     });
